@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+
+}
+.hero{
+    height: 100vh;
+    background:
+    url("../img/hero-img.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container {
+    max-width: 90%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/*Estilos del nav*/
+.heroNav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav {
+    height: 70px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+
+}
+.navbar {
+    width: 40%;
+}
+.navbar__logo {
+    width: 20%;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar__item{
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+/*estilos al hero text*/
+.containerHero{
+    height: calc(100vh - 70px);
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 2.4rem;
+}
+.heroText {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.heroButton{
+    padding: 5px 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0;
+}
+.heroButton a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #c8677f;
+}
+/*Seccion reserva*/
+.reservas {
+    height: 100vh;
+    padding-top: 3rem;
+    font-family: 'Bebas Neue', cursive;
+
+}
+.reservasTitle{
+    font-size: 2rem;
+    text-align: center;
+}
+.reservasCont{
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.formulario {
+    width: 40%;
+    font-size: 1.8rem;
+}
+
+.formGroup {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.formInput {
+    height: 2.2rem;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.formButton{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #c8677f;
+    padding: 5px 15px;
+    margin-top: 2rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 0;
+}
+
+/*Estilos disponibilidad*/
+.containerDisp {
+    width: 40%;
+    height: 390px;
+    margin-top: 1.5rem;
+
+}
+.containerDisp h3 {
+    font-size: 1.8rem;
+}
+.disp{
+    height: 100%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+    "mesa1 mesa2 mesa3"
+    "mesa4 mesa5 mesa6"
+    "mesa7 mesa8 mesa9"
+    ;
+    justify-items: center;
+    align-items: center;
+}
+.mesa {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(145, 255, 145);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mesa1 {
+    grid-area: mesa1;
+}
+.mesa2 {
+    grid-area: mesa2;
+}
+.mesa3 {
+    grid-area: mesa3;
+}
+.mesa4 {
+    grid-area: mesa4;
+}
+.mesa5 {
+    grid-area: mesa5;
+}
+.mesa6 {
+    grid-area: mesa6;
+}
+.mesa7 {
+    grid-area: mesa7;
+}
+.mesa8 {
+    grid-area: mesa8;
+}
+.mesa9 {
+    grid-area: mesa9;
+}
+
+.tablaReservas {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.tablaReservas h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+.tableButton{
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+.muestra{
+    margin: 0 auto;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 3rem;
+
+}
+
+.thead__th{
+    font-size: 1.4rem;
+    padding: 0 25px;
+
+}
+
+.tbody__td{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/*Estilos de la seccion Clima*/
+.clima {
+    width: 90%;
+    margin: 5rem auto;
+    background-color: #c8677f83;
+    color: bisque;
+    font-family:'Bebas Neue', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+.copy1 {
+    font-size: 3rem;
+}
+.actualizacion {
+    font-size: 1rem;
+}
+
+
+/* estilo por js*/
+.noDisponible {
+    background-color: rgb(202, 54, 54);
+}
+

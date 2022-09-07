@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sede</title>
+
+    <!--css propio-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="hero">
+
+        <div class="heroNav">
+            <nav class="nav">
+                <div class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">Home</li>
+                        <li class="navbar__item">Carta</li>
+                    </ul>
+                </div>
+                <a href="" class="navbar__logo">LA SEDE</a>
+                <div class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">Recetas</li>
+                        <li class="navbar__item">Reservas</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="containerHero">
+            <div class="heroText">
+                <h1>Inmortalizar momentos</h1>
+                <button class="heroButton"><a href="#reservaciones"> Reservá tu mesa</a> </button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="reservas" id="reservaciones">
+            <div class="container">
+
+                <h2 class="reservasTitle">RESERVÁ TU LUGAR</h2> 
+
+                <div class="reservasCont">
+                    <div class="formulario">
+                        <form class="form" id="idForm">
+                            <div class="formGroup">
+                                <label class="formLabel" for="formName">Nombre</label>
+                                <input class="formInput" type="text" id="formName" name="nombre" required>
+                            </div>
+                            <div class="formGroup">
+                                <label class="formLabel" for="formSurname">Apellido</label>
+                                <input class="formInput" type="text" id="formSurname" name="apellido" required>
+                            </div>
+                            <div class="formGroup">
+                                <label class="formLabel" for="formTel">Celular</label>
+                                <input class="formInput" type="number" id="formTel" name="celular" required>
+                            </div>
+                            <div class="formGroup">
+                                <label class="formLabel" for="formTable">N° de Mesa</label>
+                                <input class="formInput" type="number" min="1" max="9" id="formTable" name="mesa" required>
+                            </div>
+                    
+                            <button type="submit" class="formButton">Guardar mesa</button>
+                        </form>
+                    </div>
+                    
+                    <div class="containerDisp">
+                        <h3>Disponibilidad de mesas</h3>
+                        <div class="disp">
+                            <div class="mesa1 mesa" id="idMesa1">1</div>
+                            <div class="mesa2 mesa" id="idMesa2">2</div>
+                            <div class="mesa3 mesa" id="idMesa3">3</div>
+                            <div class="mesa4 mesa" id="idMesa4">4</div>
+                            <div class="mesa5 mesa" id="idMesa5">5</div>
+                            <div class="mesa6 mesa" id="idMesa6">6</div>
+                            <div class="mesa7 mesa" id="idMesa7">7</div>
+                            <div class="mesa8 mesa" id="idMesa8">8</div>
+                            <div class="mesa9 mesa" id="idMesa9">9</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="tablaReservas container">
+            <h2>INFORMACION DE RESERVAS</h2>
+            <button  id="formButton" class="formButton tableButton">Mostrar reservas</button>
+            <div class="contTabla">
+                <table class="muestra">
+                    <thead class="thead">
+                        <tr class="thead__tr">
+                            <th class="thead__th">Nombre</th>
+                            <th class="thead__th">Apellido</th>
+                            <th class="thead__th">Celular</th>
+                            <th class="thead__th">Numero de Mesa</th>
+                        </tr>
+                    </thead>
+                    <tbody  id="mesasOcupadas">
+        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="clima">
+            <div class="divClima" id="divClima">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+    <!--Script Sweet Alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Script propio-->
+    <script src="js/script.js"></script>
+</body>
+</html>
